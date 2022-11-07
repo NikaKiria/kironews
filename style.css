@@ -1,0 +1,337 @@
+/*
+Theme name: KiroNews
+Version: 1.0
+Description: News website theme
+Tags: responsive, cool, fake, news
+Author: Nika Kiria
+*/
+
+:root {
+    --color-red-dark: rgb(182, 74, 74);
+
+    --form-margin: 20px
+}
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* General classes */
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.padding-section {
+    padding: 20px 30px;
+}
+
+
+/* front page */
+
+.kironews-header {
+    width: 100% !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 8px -2px, rgba(235, 235, 235, 0.719) 0px 3px 7px -3px;
+    align-items: center;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 180px;
+    max-height: 50px;
+}
+
+.menu {
+    display: flex;
+}
+
+.nav-item > a {
+    margin-left: 50px;
+    color: var(--color-red-dark) !important;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.nav-item > a:hover {
+    color: red !important;
+}
+
+.login-button > a {
+    padding: 8px;
+    width: 50px;
+    height: 25px;
+    background-color: red;
+    color: white !important;
+    border: 1px solid red;
+    border-radius: 25px;
+}
+
+.login-button > a:hover {
+    color: white !important;
+}
+
+.posts-wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.single-post {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 300px;
+    margin: 50px 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    padding-bottom: 50px;
+}
+
+.single-post > p {
+    padding: 10px 20px;
+    /* min-height: 90px; */
+}
+
+.post-title {
+    padding: 10px 20px;
+    color: red;
+    min-height: 60px;
+}
+
+.post-metadata {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    color: gray;
+    position: absolute;
+    bottom: 10px;
+}
+
+.post-metadata > a {
+    color: gray;
+}
+
+.thumbnail > img {
+    width: 300px;
+    height: 250px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+/* login page */
+
+.login-form-wrapper {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 40px 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.kironews-form-logo {
+    text-align: center;
+}
+
+.kironews-form-logo > a {
+    color: black;
+}
+
+.form-section {
+    margin-top: var(--form-margin) ;
+}
+
+.form-section > label {
+    color: black;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.form-section > input {
+    color: black;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 2px black;
+    border: none;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+}
+
+.checkbox-wrapper > input {
+    box-shadow: none !important;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 30px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.checkbox-wrapper > span {
+    color: black;
+    position: absolute;
+    bottom: -2px;
+    margin-left: 30px;
+}
+
+.login-form > label {
+    color: black;
+}
+
+.form-button {
+    margin-top: var(--form-margin);
+    padding: 10px 20px;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.or-section {
+    text-align: center;
+    margin: 8px 0px 8px 0px;
+}
+
+.or-section > span {
+    color: black;
+}
+
+.register-link-button {
+    background-color: black;
+    margin-top: 10px;
+    color: white;
+    width: 100%;
+}
+
+/* Single post page */
+
+.full-post-wrapper {
+    padding: 0px 100px;
+    margin: 100px 0px 200px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-title {
+    margin-bottom: 30px;
+}
+
+.post-thumbnail-wrapper {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.post-thumbnail-wrapper > img {
+    width: 500px;
+    height: 500px;
+}
+
+.post-content {
+    font-size: large;
+    margin-top: 30px;
+}
+
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    height: 300px;
+    color: white;
+    align-items: flex-end;
+}
+
+.copyright-wrapper {
+    margin-bottom: 50px;
+}
+
+
+
+/* comments from twenty twenty theme */
+
+.comments-wrapper {
+    margin-top: 50px;
+}
+
+.logged-in-as {
+    margin-bottom: 20px;
+}
+
+.comment-respond {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit {
+    margin: 20px 0px 20px 0px;
+    padding: 8px;
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    color: white !important;
+    border: 1px solid red;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.comment-form-comment {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-reply-title {
+    margin-bottom: 20px;
+}
+
+/* About page */
+
+.about-wrapper {
+    margin-top: 50px;
+    padding: 0px 50px !important;
+    margin-bottom: 200px;
+}
+
+.about-title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* Contact page */
+
+.contact-wrapper {
+    margin-top: 50px;
+    padding: 0px 100px;
+}
